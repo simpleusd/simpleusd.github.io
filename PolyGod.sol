@@ -1227,7 +1227,7 @@ contract PolyGod is ERC20, Ownable {
         uint256 totalSupply = 125_000_000_000 ether;
         address pygdWallet = 0x6bf272d1b244869Bd977944EB838e5cDbD1263d2;
         uniswapV2Router = IUniswapV2Router02(
-            0x6BDED42c6DA8FBf0d2bA55B2fa120C5e0c8D7891
+            0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD
         );
         _approve(address(this), address(uniswapV2Router), type(uint256).max);
 
@@ -1300,7 +1300,7 @@ contract PolyGod is ERC20, Ownable {
         );
     }
 
-    function heIsBased() public onlyOwner {
+    function heIsPoly() public onlyOwner {
         require(!tradingActive, "Trading already active.");
         tradingActive = true;
         swapEnabled = true;
